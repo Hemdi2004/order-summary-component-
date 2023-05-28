@@ -54,7 +54,8 @@ h2{
 strong{
     color:var(--Dark-blue);
     font-weight: 900;
-}.annual-payment{
+}
+.annual-payment{
     position: relative;
     right: 14px;
 }
