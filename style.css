@@ -1,0 +1,118 @@
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Brightblue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+  background-image: url(images/pattern-background-desktop.svg);
+  background-size: 100% 50%;
+  background-repeat: no-repeat;
+  background-color: var(--Pale-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Red Hat Display', sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    width: 90%;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.hero-img{
+    width: 100%;
+}
+h2{
+    margin:30px 0 30px 0; 
+    color: var(--Dark-blue);
+    font-weight: 900;
+
+}
+.details > p {
+      padding: 0 35px 0 35px;
+      margin-bottom: 30px;
+      color:var(--Desaturated-blue);
+      font-weight: 500;
+}
+strong{
+    color:var(--Dark-blue);
+    font-weight: 900;
+}.annual-payment{
+    position: relative;
+    right: 14px;
+}
+
+.annual-payment > p {
+    color:var(--Desaturated-blue);
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+a{
+    color: var(--Brightblue);
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+a:hover{
+    text-decoration: none;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.subscription-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--Very-pale-blue);
+    width: 85%;
+    padding: 12px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+.payment-button{
+background-color: var(--Brightblue);
+color:white;
+padding: 16px;
+border-radius: 8px;
+width: 85%;
+border: none;
+margin-bottom: 10px;
+font-size: 0.9rem;
+font-weight: 700;
+}
+.payment-button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.cancel-button{
+width: 85%;
+padding: 12px;
+background-color: white;
+color: var(--Desaturated-blue);
+color: var(--Desaturated-blue);
+border: none;
+margin-bottom: 20px;
+font-weight: 900;
+}
+.cancel-button:hover{
+    cursor: pointer;
+    color: var(--Dark-blue);
+}
+@media (min-width : 575px) {
+    .container{
+        width: 25%;
+    }
+}
